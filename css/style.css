@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  text-color: white;
 }
 
 html {
@@ -11,7 +10,12 @@ html {
 
 body {
   background-color: black;
-  color: white;
+  padding-bottom: 100px;
+}
+
+.main-content {
+  width: 100%;
+  margin: auto;
 }
 
 .icon {
@@ -22,31 +26,52 @@ body {
 
 .header {
   display: flex;
-  background-color: skyblue;
+  background-color: rgb(0, 0, 0);
   position: fixed;
-  width: 100%;
+  width: 100%;s
+  color: white;
 }
 
 .button {
   display: flex;
   gap: 100px;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   align-items: center;
   margin: auto;
 }
 
 a {
   text-decoration: none;
-  color: rgb(21, 6, 6);
+  color: white;
   text-align: right;
 }
 
+a:hover{
+    color:#fff;
+
+    text-shadow:
+        0 0 3px #fff,
+        0 0 8px #fff,
+        0 0 15px #7edbff,
+        0 0 30px #3cbcff,
+        0 0 50px #0099ff,
+        0 0 80px #0066ff,
+        0 0 120px #0044ff;
+
+    filter:
+        drop-shadow(0 0 5px #3cbcff)
+        drop-shadow(0 0 10px #1da1ff);
+
+    transition: all .45s ease;
+}
+
 #stori {
-  background-color: skyblue;
+  background-color: none;
   text-align: left;
   margin: auto;
   width: 80%;
   line-height: 1.4;
+  color: white;
 }
 
 li {
@@ -54,3 +79,41 @@ li {
   margin: 10px 0;
   margin-left: 20px;
 }
+
+.character {
+  width: 80%;
+  line-height: 1.4;
+  color: white;
+  background-color: none;
+  font-size: 1rem;
+  display: block;
+  margin: auto;
+}
+ 
+.char-icon {
+  width: 200px;
+  margin: 0;
+  padding: 0;
+   float: left;
+}
+
+.char-desc {
+  line-height: 1.4;
+  margin-left: 225px;
+  background-color: none;
+}
+
+.char-desc, p {
+  margin-bottom: 20px;
+  background-color: none;
+}
+
+.footer {
+  Margin-top: 500px;
+  background-color: none;
+  text-align: center;
+  font-style: italic;
+  Color: skyblue;
+}
+
+
